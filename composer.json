@@ -1,0 +1,13 @@
+{
+    "name": "erichfournier/html-to-image-php",
+    "require": {
+        "php": ">=8.1",
+        "ext-sockets": "*",
+        "chrome-php/chrome": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ErichFournier\\HtmlToImagePhp\\": "src/"
+        }
+    }
+}
