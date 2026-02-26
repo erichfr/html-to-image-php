@@ -31,22 +31,29 @@ class HtmlConverter
     {
         $browserFactory = new BrowserFactory();
         
-        // No Windows, essas flags ajudam muito na estabilidade
         $browser = $browserFactory->createBrowser([
             'windowSize' => [$this->width, $this->height],
-            'customFlags' => ['--no-sandbox', '--disable-gpu']
+            'enableImages' => true,
+            'noSandbox' => true,
+            'customFlags' => [
+                '--disable-gpu',                
+                '--disable-software-rasterizer', 
+                '--no-sandbox',                
+                '--disable-dev-shm-usage',     
+                '--remote-debugging-port=9222',  
+                '--disable-setuid-sandbox'      
+            ]
         ]);
 
         try {
             $page = $browser->createPage();
             $page->setHtml($this->html);
             
-            // Pequena espera para renderizar fontes/CSS
             usleep(500000); 
 
             $page->screenshot([
                 'format'  => 'jpeg',
-                'quality' => 90,
+                'quality' => 95, 
             ])->saveToFile($path);
         } finally {
             $browser->close();
