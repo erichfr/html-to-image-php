@@ -63,6 +63,10 @@ try {
 }
 
 ```
+
+![Gravando 2026-03-03 114633](https://github.com/user-attachments/assets/61c5adf6-16e4-47ab-834a-1eb6e95d4e5d)
+
+
 ---
 
 ## ⚙️ Configurações de Estabilidade
