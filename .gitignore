@@ -1,3 +1,21 @@
-vendor/
+# Dependências do Composer
+/vendor/
+
+# Arquivos de trava e configuração local
 composer.lock
+
+# Arquivos gerados por testes (Imagens de recibos)
+*.jpg
+*.jpeg
+*.png
 resultado.jpg
+
+# Pastas temporárias do Chrome que criamos nas tentativas anteriores
+chrome_php_*
+html_conv_*
+.local-chromium/
+
+# IDEs e Sistema
+.vscode/
+.idea/
+Thumbs.db
