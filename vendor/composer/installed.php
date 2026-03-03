@@ -3,7 +3,7 @@
         'name' => 'erichfournier/html-to-image-php',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'ca518bdf064c3adb5fee463efb329615466249bb',
+        'reference' => 'fea75adb8dcff0f4e3544b8e745ba5c3ce93bb05',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -31,7 +31,7 @@
         'erichfournier/html-to-image-php' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'ca518bdf064c3adb5fee463efb329615466249bb',
+            'reference' => 'fea75adb8dcff0f4e3544b8e745ba5c3ce93bb05',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

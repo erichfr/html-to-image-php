@@ -29,10 +29,6 @@ class HtmlConverter
 
     public function save(string $path): void
     {
-        if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
-            @exec('taskkill /F /IM chrome.exe /T');
-        }
-
         $browserFactory = new BrowserFactory();
         
         $browser = $browserFactory->createBrowser([
